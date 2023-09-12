@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas EntryView Component debe hacer match con el snapshot 1`] = `
+<div class="entry-container mb-3 pointer p-2">
+  <!-- Titulo -->
+  <div class="entry-title d-flex"><span class="text-success fs-5 fw-bold">5</span><span class="mx-1 fs-5">Septiembre</span><span class="mx-2 fw-light">2023, Martes</span></div>
+  <div class="entry-description">Entrada desde mock data</div>
+</div>
+`;

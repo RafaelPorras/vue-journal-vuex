@@ -65,6 +65,7 @@ import Swal from 'sweetalert2'
 import uploadImage from '../helpers/uploadImage'
 
 export  default{
+    name: 'EntryView',
     props:{
         id:{
             type: String,
@@ -72,7 +73,7 @@ export  default{
         }
     },
     components:{
-        Fab: defineAsyncComponent( () => import('../components/FabBotton.vue'))
+        Fab: defineAsyncComponent( () => import('../components/FabButton.vue'))
     },
 
     data(){
@@ -135,7 +136,7 @@ export  default{
         },
         
         async saveEntry(){
-            new Swal({
+            Swal.fire({
                 title:'Espera por favor',
                 allowOutsideClick: false
             })
@@ -175,7 +176,7 @@ export  default{
             })
 
             if(isConfirmed){
-                new Swal({
+                Swal.fire({
                     title: 'Wait please',
                     allowOutsideClick: false
                 });
